@@ -1,0 +1,18 @@
+DATASET INTEGRATION
+
+Decision: Merge PhiUSIIL and StealthPhisher only
+- LegitPhish excluded (column mismatch without proportional gain)
+- Malicious URLs reserved for future work (raw URLs need full extraction)
+
+Merge Process:
+1. Kept 10 shared columns + URL + label
+2. Added 'source' column to track origin
+3. Stacked vertically (concatenated)
+4. Applied financial feature engineering to all URLs
+
+Final Dataset:
+- 572,119 rows
+- 27 features (10 shared + 14 financial + URL + label + source)
+- 310,656 phishing samples
+- 261,463 legitimate samples
+- Well-balanced ratio (54% phishing, 46% legit)
