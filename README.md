@@ -1,9 +1,9 @@
 # Phishing Detection for Financial Sector
 
-## Overview
+#Overview
 This project develops an online machine learning model for detecting phishing attacks specifically targeting the financial sector. The model uses URL-based features with custom financial indicators to detect zero-day phishing attacks in real-time.
 
-## Dataset
+#Dataset
 - **Size:** 572,119 samples
 - **Features:** 27 (including 14 custom financial features)
 - **Sources:** 
@@ -17,7 +17,7 @@ This project develops an online machine learning model for detecting phishing at
 - Suspicious TLD detection (.xyz, .top, etc.)
 - And 10 more financial-specific indicators
 
-## 🚧 Project Status
+# Project Status
 
 **Current Phase:** Data cleaning and feature engineering complete. Model training in progress.
 
