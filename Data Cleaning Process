@@ -1,0 +1,30 @@
+CLEANING PIPELINE
+
+Step 1: Missing Value Removal
+- PhiUSIIL: 0 missing values
+- LegitPhish: 1 row removed (missing label)
+- StealthPhisher: 0 missing values
+- Malicious URLs: 0 missing values
+
+Step 2: Duplicate Removal
+- PhiUSIIL: 425 duplicates removed
+- LegitPhish: 346 duplicates removed
+- StealthPhisher: 0 duplicates
+- Malicious URLs: 48 duplicates removed
+
+Step 3: Label Standardization
+Unified all labels to: 1 = Phishing, 0 = Legitimate
+- PhiUSIIL: 0/1 (swapped to match standard)
+- LegitPhish: 0.0/1.0 → 0/1
+- StealthPhisher: "Phishing"/"Legitimate" → 1/0
+- Malicious URLs: "phishing"/"benign" → 1/0
+
+Step 4: Column Standardization
+- Renamed all label columns to 'label'
+- Renamed URL columns to 'URL'
+- Dropped useless columns (FILENAME, Title, Domain, IsUnreachable)
+
+Step 5: Feature Overlap Analysis
+Identified 10 columns common across PhiUSIIL and StealthPhisher:
+- URL, IsDomainIP, TLDLength, TLD, LineOfCode, HasTitle, HasFavicon,
+  IsResponsive, HasDescription, HasHiddenFields, HasSubmitButton, label
