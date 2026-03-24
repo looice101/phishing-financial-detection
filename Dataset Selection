@@ -1,0 +1,29 @@
+WHY THESE DATASETS?
+
+I selected datasets based on:
+1. Size (need hundreds of thousands of samples)
+2. Features (need 20-50 meaningful columns)
+3. Recency (2024-2026 datasets preferred)
+4. Financial relevance (pre-existing bank/payment indicators)
+
+DATASET 1: PhiUSIIL
+- Source: UCI Machine Learning Repository
+- Original size: 235,795 rows, 54 features
+- Why chosen: Has 'Bank', 'Pay', 'Crypto' features pre-extracted
+- Link: https://archive.ics.uci.edu/dataset/967
+
+DATASET 2: StealthPhisher
+- Source: IEEE DataPort
+- Original size: 336,749 rows, 64 features
+- Why chosen: Has 'HasBankingKey', 'HasPaymentKey', 'HasCryptoKey'
+- Large sample size
+
+DATASET 3: LegitPhish
+- Source: Mendeley Data
+- Original size: 101,219 rows, 17 features
+- Why chosen: Good overlap with PhiUSIIL features
+
+DATASET 4: Malicious URLs
+- Source: Kaggle
+- Original size: 651,191 rows, 2 columns
+- Why chosen: Raw URLs for scale demonstration (reserved for future work)
