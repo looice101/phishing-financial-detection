@@ -1,0 +1,16 @@
+RESEARCH PROBLEM
+The financial sector faces increasing phishing attacks that cause significant financial losses. 
+Traditional detection methods fail to identify zero-day attacks and cannot adapt to evolving 
+threat patterns.
+
+RESEARCH OBJECTIVES
+1. Develop a phishing detection model specifically for the financial sector
+2. Implement online learning for real-time detection and adaptation
+3. Detect zero-day phishing attacks targeting financial institutions
+4. Create usable software for URL-based phishing detection
+
+MY CONTRIBUTION
+- Financial-specific feature engineering (bank keywords, urgency terms, etc.)
+- Online learning implementation for continuous model updates
+- Large-scale dataset integration (572k samples)
+- Real-time detection tool
