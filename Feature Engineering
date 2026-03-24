@@ -1,0 +1,26 @@
+FINANCIAL FEATURE ENGINEERING
+
+Why: To make the model specifically for financial sector detection
+
+14 Features Engineered:
+
+1. url_length           → Length of URL (phishing URLs often longer)
+2. has_https            → Uses HTTPS? (legitimate sites almost always do)
+3. has_ip_address       → Uses IP instead of domain? (highly suspicious)
+4. digit_count          → Number of digits (phishing uses numbers to hide)
+5. hyphen_count         → Number of hyphens (common in fake domains)
+6. subdomain_count      → Number of subdomains (excessive = suspicious)
+7. domain_length        → Length of domain name
+8. financial_keywords   → Count of: login, verify, account, etc.
+9. bank_keywords        → Count of: chase, paypal, visa, etc.
+10. urgency_keywords    → Count of: urgent, suspended, verify now, etc.
+11. suspicious_tld      → TLD in {.xyz, .top, .click, etc.}
+12. has_at_symbol       → Contains @? (classic phishing trick)
+13. has_double_slash    → Unusual // pattern?
+14. url_entropy         → Randomness score (high = algorithmically generated)
+
+Financial Keyword Lists:
+- Financial: login, signin, verify, secure, account, banking, transfer, etc.
+- Bank: chase, paypal, visa, mastercard, bankofamerica, wells fargo, etc.
+- Urgency: urgent, suspend, suspended, limited, expire, alert, etc.
+- Suspicious TLDs: .xyz, .top, .click, .link, .win, .gq, .ml, .cf, etc.
